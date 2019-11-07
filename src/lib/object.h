@@ -52,6 +52,8 @@ struct tobject {
     twist unsealed_auth; /** unwrapped auth value */
 
     uint32_t handle;     /** loaded tpm handle */
+
+    twist tobjauthpolicy;
 };
 
 typedef struct sealobject sealobject;
@@ -66,6 +68,8 @@ struct sealobject {
     twist sopub;
     twist sopriv;
     twist soauthsalt;
+
+    twist sealobjauthpolicy;
 
     uint32_t handle;
 };
